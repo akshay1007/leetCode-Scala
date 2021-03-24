@@ -1,6 +1,7 @@
 package dsa
 import scala.collection.mutable
 /*
+ How do you find the length of the longest substring without repeating characters?
  Scala program to find and print longest substring without repeating characters.
  Function to find and print longest substring without repeating characters.
 */
