@@ -31,10 +31,9 @@ object LongestSubString extends App{
         }
       }
 
-      println( s.substring((s.length-1 - start),length))
       Math.max(length, (s.length - start))
     }
   }
 
-  println(longestSubstring("abcabcbb"))
+  println(longestSubstring("ababacd"))
 }
