@@ -1,6 +1,7 @@
 package dsa
 
 import scala.collection.mutable.HashSet
+//Find Pair Of Integers in Array whose Sum is Given Number
 
 object FindPair extends App {
 
