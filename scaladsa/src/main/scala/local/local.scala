@@ -1,5 +1,0 @@
-package local
-
-object local {
-
-}
