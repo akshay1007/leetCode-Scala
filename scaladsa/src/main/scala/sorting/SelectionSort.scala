@@ -8,7 +8,7 @@ Auxiliary Space: O(1)
 object SelectionSort extends App(){
 
 
-  var arr = Array(65,25,12,22,11)
+  var arr = Array(1,65,25,12,22,11)
   var n = arr.length
 
   for(i<-0 until n-1; j<- i+1 until n){
