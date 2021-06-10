@@ -2,21 +2,31 @@ package dsa
 
 object RemoveDupliocateFromArrayInPlace extends App {
 
-  def removeDuplicate(nums:Array[Int]):Int = {
+  def removeDuplicate(nums:Array[Int],length:Int):Int = {
+    if(length==0 || length ==1){
+      return length
+    }
 
-    var i:Int =0
-    for(j <-0 until nums.length){
-      if(nums(j) != nums(i)){
-        i = i +1
-        nums(i) = nums(j)
+    var j:Int =0 // for next element
+    for(i <-0 until nums.length-1){
+      if(nums(i) != nums(i+1)){
+        nums(j) = nums(i)
+        j = j +1
       }
 
     }
-    return i +1
+
+    nums(j) = nums(nums.length-1)
+    j +=1;
+    return j
 
   }
 
-  val nums = Array(0,0,1,1,1,2,2,3,3,4)
-  println(removeDuplicate(nums))
+  var nums = Array(0,0,1,1,1,2,2,3,3,4)
+  var length = nums.length
+val len = removeDuplicate(nums, length)
+  for(i<-0 until len){
+    print (" "+nums(i))
+  }
 
 }
