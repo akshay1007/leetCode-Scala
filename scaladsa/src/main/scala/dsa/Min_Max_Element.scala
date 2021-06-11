@@ -176,47 +176,47 @@ def findMin(arr:Array[Int],low:Int,high:Int ):Int={
   var arr11 = Array( 5, 6, 1, 2, 3, 4 );
     var n11 = arr11.length;
     System.out.println("The minimum element is " +
-      findMin(arr11, 0, n11 - 1));
+      findMidDup(arr11, 0, n11 - 1));
 
     var arr21 = Array(1, 2, 3, 4 );
       var n21 = arr21.length;
       System.out.println("The minimum element is " +
-        findMin(arr21, 0, n21 - 1));
+        findMidDup(arr21, 0, n21 - 1));
 
       var arr31 = Array(1);
       var n31 = arr31.length;
       System.out.println("The minimum element is " +
-        findMin(arr31, 0, n31 - 1));
+        findMidDup(arr31, 0, n31 - 1));
 
       var arr41 = Array( 1, 2 );
       var n41 = arr41.length;
       System.out.println("The minimum element is " +
-        findMin(arr41, 0, n41 - 1));
+        findMidDup(arr41, 0, n41 - 1));
 
       var arr51 = Array( 2, 1 );
       var n51 = arr51.length;
       System.out.println("The minimum element is " +
-        findMin(arr51, 0, n51 - 1));
+        findMidDup(arr51, 0, n51 - 1));
 
       var arr61 = Array( 5, 6, 7, 1, 2, 3, 4 );
       var n61 = arr61.length;
       System.out.println("The minimum element is " +
-        findMin(arr61, 0, n61 - 1));
+        findMidDup(arr61, 0, n61 - 1));
 
       var arr71 = Array( 1, 2, 3, 4, 5, 6, 7 );
       var n71 = arr71.length;
       System.out.println("The minimum element is " +
-        findMin(arr71, 0, n71 - 1));
+        findMidDup(arr71, 0, n71 - 1));
 
       var arr81 = Array( 2, 3, 4, 5, 6, 7, 8, 1 );
       var n81 = arr81.length;
       System.out.println("The minimum element is " +
-        findMin(arr81, 0, n81 - 1));
+        findMidDup(arr81, 0, n81 - 1));
 
       var arr91 = Array( 3, 4, 5, 1, 2 );
       var n91 = arr91.length;
       System.out.println("The minimum element is " +
-        findMin(arr91, 0, n91 - 1));
+        findMidDup(arr91, 0, n91 - 1));
 
       def findMax(arr:Array[Int], low:Int, high:Int):Int ={
 
