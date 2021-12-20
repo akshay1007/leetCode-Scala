@@ -1134,3 +1134,29 @@ Insert into Month_Table Values (12, 'DEC');
 
 select Month_Table.month_id , month , name , amount  from Month_Table , Emp_Table
 on Month_Table.month_id = Emp_Table.month_id
+
+
+--Question 36
+
+What is the difference between the revenue of each product and the revenue of the best-selling product in the same category of that product?
+
+
+create table products_revenue 
+(
+product varchar , category varchar , revenue int)
+
+insert into products_revenue values ('Free5.0','Running',10000 );
+insert into products_revenue values ('Free4.0','Running',9000 );
+insert into products_revenue values ('LeBron17','Basketball',18000   );
+insert into products_revenue values ('Kyrie7','Basketball',	12000  );
+insert into products_revenue values ('React','Running',10000 );
+
+insert into products_revenue values ('Air Max1','Basketball',13000)
+insert into products_revenue values ('Air Max2','Basketball',12000);
+insert into products_revenue values ('Zoom1','Running',9000);
+insert into products_revenue values ('Zoom2','Running',8000);
+
+
+select *,max(revenue)over(partition by category)  ,(max(revenue)over(partition by category)  - revenue) from products_revenue 
+
+
